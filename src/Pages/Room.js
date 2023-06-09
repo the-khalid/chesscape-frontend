@@ -15,7 +15,7 @@ function Room( {roomId} ) {
   const [numPlayers, setNumPlayers] = useState(1);
   const searchParams = new URLSearchParams(location.search);
   const timer = searchParams.get('t');
-  const link = 'localhost:3000/joinroom' + location.pathname + '?t=' + timer;
+  const link = 'chesscape.vercel.app/joinroom' + location.pathname + '?t=' + timer;
 
   function handleCopy() {
     toast.success('Link copied', {
