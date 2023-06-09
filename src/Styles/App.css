@@ -1,0 +1,175 @@
+:root {
+  --window-height : 50vh;
+  --window-width : 50vw;
+}
+
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica", Arial, sans-serif;
+}
+
+/* Optionally, you can specify the font for specific elements as well */
+h1, h2, h3, p, span {
+  font-family: "Helvetica", Arial, sans-serif;
+}
+
+.app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.option-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.centered {
+  text-align: center;
+  padding: 5px;
+}
+
+.bttn {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.title {
+    font-weight: bold;
+    padding: 20px;
+    font-family: 'Patrick Hand SC';
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.5);
+    width: 300px;
+    margin: 0 auto;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.room-container { 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.div1 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 15px;
+}
+
+.div3 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 5px;
+}
+
+.div2 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 30px;
+  /* padding: 30px; */
+}
+
+.backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000000e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.modal {
+    width: clamp(35%, 300px, 80%);
+    height: min(50%, 300px);
+    margin: auto;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    background-image: url('../../public/chess6.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    z-index: 9999;
+}
+
+.toggle-button-group .MuiToggleButton-root {
+    width: 50px; /* Set the desired width for the buttons */
+  }
+
+
+  .animated-gradient {
+    background: linear-gradient(90deg, #ff4242, #ffb74a, #4cff1f, #00fff2, rgb(143, 63, 255), #ff44e0, #ff4479);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 20s ease-in-out infinite;
+  }
+
+  @keyframes animate {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 400%;
+    }
+  }
+  
+  .grid-box {
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  
+  .board {
+    width: clamp(400px, 85%, 600px); /* Set the width using clamp */
+    height: clamp(400px, 85%, 600px); /* Set the height using clamp */
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  
+  .custom-switch.left {
+    background-color: #b58862; /* Color for the left side */
+  }
+  
+  .custom-switch.right {
+    background-color: #779951; /* Color for the right side */
+  }
+  
